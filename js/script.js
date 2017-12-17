@@ -26,7 +26,7 @@ $(function () {
 
 	//on resize reveal the collapsed nav
 	$(window).resize(function() {
-	  	if($(window).width() < 650){
+	  	if($(window).width() < 700){
 			$("#accordPage .collapse").addClass("d-none");
 			$("#accordPage .collapsed").removeClass("d-none");
 		}else {
