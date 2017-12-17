@@ -1,0 +1,166 @@
+/* Styles that apply to all pages */
+body {
+	margin: 0px;
+}
+
+li:hover {
+	cursor: pointer;
+}
+
+/*Colors*/
+.dark-gray {
+	color: #4D4D4D;
+}
+
+.black {
+	color: #000000;
+}
+
+.white-bg {
+	background-color: #fff;
+}
+
+.white {
+	color: #fff;
+}
+
+.light-blue {
+	color: #96C1CB;
+}
+
+.green {
+	color: #5DC987;
+}
+
+.lighter-blue-bg {
+	background-color: #F1F8FD; 
+}
+
+.dark-bg {
+	background-color: #2D302E; 
+}
+
+.dark {
+	color: #2D302E;
+}
+
+/*Text*/
+.text-center { 
+	text-align: center;
+}
+
+.font-uppercase {
+	text-transform: uppercase;
+}
+
+.font-2 {
+	font-size: 2em;
+}
+
+.font-normal {
+	font-weight: normal;
+}
+
+.fa-7x {
+    font-size: 7em !important;
+}
+/*Display*/
+.d-none {
+	display: none;
+}
+
+/*Width/Height*/
+.w-50 {
+	width: 50%;
+}
+
+.w-20 {
+	width: 20%;
+}
+
+/*Accordion component*/
+#accordPage  {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*navigation*/
+#accordPage .dropdown {
+	top: 3em;
+    left: 0px;
+    right: 0px;
+}
+   
+#accordPage .dropdown a:hover {
+	background-color:  #5DC987;
+	color: #fff; 
+}
+
+/*hero image section*/
+#accordPage .hero-bg {
+	background-image: url(../img/hero.jpg);
+	background-repeat: no-repeat;
+	height: 500px;
+    background-size: cover;
+}
+
+#accordPage .hero-bg a,
+#accordPage .lighter-blue-bg a {
+	border: 2px solid #96C1CB; 
+	background-color: #0D4761;
+	border-radius: 50px;
+}
+
+#accordPage .a-acc-tab {
+	color: #5DC987; 
+}
+
+.accord-tab {
+	padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+#accordPage .accordion .col-4 ul {
+	padding-right: 20%;
+    border-right: 1px solid #5DC987; 
+}
+
+/*media query*/
+@media (max-width:650px) {
+    #accordPage .hero-bg article {
+    	width: 100%;
+    }
+    #accordPage .accordion-mobile {
+    	display: block;
+    }
+    #accordPage .accordion {
+    	display: none;
+    }
+    #accordPage .lighter-blue-bg .md-col-6 {
+    	padding-top: 0px;
+    }
+    #accordPage .lighter-blue-bg p {
+    	margin-bottom: 1em;
+    }
+}
+
+@media (max-width:768px) {
+    #accordPage .collapse a {
+    	padding-right: 0.5em; 
+    }
+    #accordPage .hero-bg h1 {
+    	font-size: 1.5em;
+    }
+}
+
+@media (max-width:1200px) {
+    #accordPage .hero-bg {
+    	background-image: url(../img/hero.jpg);
+	    background-repeat: no-repeat;
+	    height: 301px;
+	    background-size: cover;
+    }
+     #accordPage .hero-bg article {
+    	padding-top: 1em;
+    }
+
+}
