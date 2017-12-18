@@ -23,6 +23,17 @@ $(function () {
 	$("#iconBarApp").unbind().click(function() {
 		$("#accordPage .dropdown").toggle();
 	});
+	
+	//when window is less then 650px, collapse the navigation
+	  $(document).ready(function(){
+	    if($(window).width() < 700){
+			$("#accordPage .collapse").addClass("d-none");
+			$("#accordPage .collapsed").removeClass("d-none");
+		}else {
+			$("#accordPage .collapse").removeClass("d-none");
+			$("#accordPage .collapsed").addClass("d-none");
+		}
+	  });
 
 	//on resize reveal the collapsed nav
 	$(window).resize(function() {
